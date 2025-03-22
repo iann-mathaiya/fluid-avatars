@@ -1,10 +1,21 @@
 ---
-import RootLayout from '../layouts/RootLayout.astro';
+import RootLayout from "../layouts/RootLayout.astro";
 ---
 
 <RootLayout>
-	<section class="mx-auto w-full max-w-screen-lg px-4 py-8">
-		<h1 class="text-3xl text-center font-semibold">Fluid Avatars</h1>
+	<section class="mx-auto w-full max-w-screen-lg py-8 px-4">
+		<div class="mt-12 flex items-center gap-4">
+			<div class="min-w-16 size-16 bg-zinc-200 rounded-xl" />
+			<div class="w-full">
+				<h1 class="text-lg font-semibold">Fluid Avatars</h1>
+				<p class="text-sm text-zinc-600">
+					Generate unique user avatars using paper shaders
+				</p>
+			</div>
 
+			<a href="/playground" class="py-2 px-4 text-sm text-white whitespace-nowrap bg-zinc-900 hover:bg-orange-600 rounded-full">
+				Try Playground
+			</a>
+		</div>
 	</section>
 </RootLayout>
