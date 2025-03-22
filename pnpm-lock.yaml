@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@paper-design/shaders-react':
+        specifier: ^0.0.23
+        version: 0.0.23
       '@tailwindcss/vite':
         specifier: ^4.0.15
         version: 4.0.15(vite@6.2.2(jiti@2.4.2)(lightningcss@1.29.2))
@@ -317,6 +320,12 @@ packages:
 
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
+
+  '@paper-design/shaders-react@0.0.23':
+    resolution: {integrity: sha512-32dpcCMbWm5djRzTYKmx8mK+LbSvIM6QGTl2W+05JdLRO3XYtyTaSy8Jl6W7d8hO/9dcmEnMdByJfn4Py7gVog==}
+
+  '@paper-design/shaders@0.0.20':
+    resolution: {integrity: sha512-JHVKX9fF4vU6EZ5QNzxVzPO/xK/jnL947Q3TUwQ2gYv1wiZsirkJ/OiRt721A72KS3MKYcx/1asZ6n28f65fPA==}
 
   '@rollup/pluginutils@5.1.4':
     resolution: {integrity: sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==}
@@ -1166,6 +1175,10 @@ packages:
   radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
+  react@19.0.0:
+    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
+    engines: {node: '>=0.10.0'}
+
   readdirp@4.1.2:
     resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
     engines: {node: '>= 14.18.0'}
@@ -1739,6 +1752,13 @@ snapshots:
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@oslojs/encoding@1.1.0': {}
+
+  '@paper-design/shaders-react@0.0.23':
+    dependencies:
+      '@paper-design/shaders': 0.0.20
+      react: 19.0.0
+
+  '@paper-design/shaders@0.0.20': {}
 
   '@rollup/pluginutils@5.1.4(rollup@4.36.0)':
     dependencies:
@@ -2807,6 +2827,8 @@ snapshots:
   property-information@7.0.0: {}
 
   radix3@1.1.2: {}
+
+  react@19.0.0: {}
 
   readdirp@4.1.2: {}
 
